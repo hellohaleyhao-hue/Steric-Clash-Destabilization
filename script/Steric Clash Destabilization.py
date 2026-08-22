@@ -5,6 +5,7 @@ import re
 # ==========================================================
 #              User Configuration Variables
 # ==========================================================
+# Pathway to the PDB or PSE file that contains the protein structure to be analyzed.
 pathway = "/path/to/your/protein_model.pse"
 
 # If set to True, hydrogen atoms will be included in the steric clash calculations.
