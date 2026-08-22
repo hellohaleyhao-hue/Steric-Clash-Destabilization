@@ -22,7 +22,7 @@ A protein model is needed in the script, represented by the `pathway` variable, 
 * Remove extraneous or non-target objects or else they'll be included in calculation.
 
 ## Implementation & Usage
-The script takes a variant as input and outputs a table displaying statistical frequency and strain values (amount of overlap) for various groups (e.g. nucleic acids, inorganic, protein). It calculates strain score through the summation of the squares of Van der Waals Overlaps as a repulsive steric potential estimation: $\text{Total Strain} = \sum (\text{Overlap})^2$. All distance units are in Angstroms (Å).
+The script takes a variant as input and outputs a table displaying statistical frequency and strain values (amount of overlap) for various groups (e.g. nucleic acids, inorganic, protein) for each rotamer. It calculates strain score through the summation of the squares of Van der Waals Overlaps as a repulsive steric potential estimation: $\text{Total Strain} = \sum (\text{Overlap})^2$. All distance units are in Angstroms (Å).
 
 Run the following command in the PyMOL command line:
 ```pymol
