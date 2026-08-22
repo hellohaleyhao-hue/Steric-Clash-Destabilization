@@ -12,10 +12,20 @@ The script is used and tested on **PyMOL v3.1.8** (Schrödinger, LLC)
 
 * **Tested version**: PyMOL 3.1.8
 * **Compatibility**: Compatible with PyMOL 2.x and 3.x
-* **Dependences**: Standard python libraries, no additional dependencies needed
+* **Dependencies**: Standard python libraries, no additional dependencies needed
 
 ### Protein model
-Requires a `.pdb` or `.pse` file containing the target protein model for clash analysis. It should include all relevant objects (e.g. protein chains, ligands, cofactors) intended for strain value evaluation. Remove extraneous or non-target objects.
+A protein model is needed in the script, represented by the `pathway` variable, for analysis.
 
-## Implementation
-The script takes a variant as input and outputs a table displaying statistical frequency and strain values (amount of overlap) for various groups (e.g. nucleic acids, inorganic, protein). It calculates strain score through the summation of the squares of Van der Waals Overlaps as a repulsive steric potential estimation.
+* Requires a `.pdb` or `.pse` file containing the target protein model for clash analysis.
+* Should include all relevant objects (e.g. protein chains, ligands, cofactors) intended for strain value evaluation.
+* Remove extraneous or non-target objects or else they'll be included in calculation.
+
+## Implementation & Usage
+The script takes a variant as input and outputs a table displaying statistical frequency and strain values (amount of overlap) for various groups (e.g. nucleic acids, inorganic, protein). It calculates strain score through the summation of the squares of Van der Waals Overlaps as a repulsive steric potential estimation: $\text{Total Strain} = \sum (\text{Overlap})^2$. All distance units are in Angstroms (Å).
+
+Run the following command in the PyMOL command line:
+```pymol
+run /path/to/script.py
+```
+Further instructions are provided on the console.
