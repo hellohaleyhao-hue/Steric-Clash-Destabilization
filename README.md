@@ -1,5 +1,5 @@
-# Steric Clash Destabilization
-Calculates total strain value, thus potential destabilization amount, for missense protein mutations in PyMOL.
+# SSCREE
+Steric Strain Calculation and Repulsive Energy Estimation (SSCREE)
 
 ## Introduction
 Estimating the impact of specific missense gene mutations on protein structure, thus function, comes from various sources of evidence such as changes to bonding, positional shifts, and evolutionary conservation. Steric clashes occur when the atoms of the mutated amino acid are in close proximity to surrounding atoms.
