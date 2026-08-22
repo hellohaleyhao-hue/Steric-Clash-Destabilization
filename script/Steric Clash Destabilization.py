@@ -5,8 +5,7 @@ import re
 # ==========================================================
 #              User Configuration Variables
 # ==========================================================
-# Pathway to the PDB or PSE file that contains the protein structure to be analyzed.
-pathway = "/.../example_protein.pse"
+pathway = "/path/to/your/protein_model.pse"
 
 # If set to True, hydrogen atoms will be included in the steric clash calculations.
 # If set to False, hydrogen atoms will be excluded from the calculations.
@@ -178,7 +177,7 @@ def calculate_strain_value(mutation: str, chain: str = "chain A") -> list:
     end_time = time.perf_counter()
 
     # Print the results in a table
-    print(f"\nStrain results for {mutation} (run_time: {end_time - start_time:.2f}s)")
+    print(f"\nStrain results for {mutation} on {chain} (run_time: {end_time - start_time:.2f}s)")
     print("=" * 111)
     print(
         f"{'Rotamer':<8} | {'Frequency':<10} | {'Total':<10} | "
