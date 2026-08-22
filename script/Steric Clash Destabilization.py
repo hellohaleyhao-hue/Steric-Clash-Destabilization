@@ -3,14 +3,10 @@ import math
 import time
 import re
 # ==========================================================
-# Enter "run <pathway to this file>" into the PyMOL command line to run this script
-# All distance values are in Angstroms (Å)
-
-# ==========================================================
 #              User Configuration Variables
 # ==========================================================
-# Pathway to the PyMOL session file or PDB file that contains the protein structure to be analyzed.
-pathway = "/Users/apple/Desktop/CCIR Academy/Transthyretin Amyloidosis Research/TTR monomer (pdb).pse"
+# Pathway to the PDB or PSE file that contains the protein structure to be analyzed.
+pathway = "/.../example_protein.pse"
 
 # If set to True, hydrogen atoms will be included in the steric clash calculations.
 # If set to False, hydrogen atoms will be excluded from the calculations.
